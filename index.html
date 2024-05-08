@@ -1,70 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gradska</title>
-    <link rel="stylesheet" href="./tailwind.css"/>
+    <link rel="stylesheet" href="./tailwind.css" />
     <script
-            type="module"
-            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
     ></script>
     <script
-            nomodule
-            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
-</head>
-<body class="bg-white">
-<nav class="bg-primary p-5 shadow md:flex md:items-center md:justify-between">
-    <div class="flex justify-between items-center">
+  </head>
+  <body class="bg-white">
+    <nav
+      class="bg-primary p-5 shadow md:flex md:items-center md:justify-between"
+    >
+      <div class="flex justify-between items-center">
         <!-- zosto span pravi golema razlika i gi oddeluva logo so menu icon, ako nema span se zalepeni -->
         <span>
-            <a href="#">
-                <img src="./Sliki/JZULogo.png" class="h-20 inline" alt="logo"/>
-            </a>
+          <a href="#">
+            <img src="./Sliki/JZULogo.png" class="h-20 inline" alt="logo" />
+          </a>
         </span>
         <!-- need explanation za ovaj line -->
         <span class="text-3x1 cursor-pointer mx-2 md:hidden block">
-            <ion-icon name="menu-outline"/>
+          <ion-icon name="menu-outline" />
         </span>
-    </div>
-    <ul class="md:flex md:items-center z[-1] md:z-auto md:static absolute bg-primary w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+      </div>
+      <ul
+        class="md:flex md:items-center z[-1] md:z-auto md:static absolute bg-primary w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500"
+      >
         <!--ul need some walkthrough so ovie w-auto i top-400px -->
         <li class="mx-4 my-6 md:my-0">
-            <a href="#" class="hover:text-button duration-300">Дома</a>
+          <a href="#" class="hover:text-button duration-300">Дома</a>
         </li>
         <li class="mx-4 my-6 md:my-0">
-            <a href="#" class="hover:text-button duration-300">Пациенти</a>
+          <a href="#" class="hover:text-button duration-300">Пациенти</a>
         </li>
         <li class="mx-4 my-6 md:my-0">
-            <a href="#" class="hover:text-button duration-300">Доктори</a>
+          <a href="#" class="hover:text-button duration-300">Доктори</a>
         </li>
         <li class="mx-4 my-6 md:my-0">
-            <a href="#" class="hover:text-button duration-300">Оддели</a>
+          <a href="#" class="hover:text-button duration-300">Оддели</a>
         </li>
         <li class="mx-4 my-6 md:my-0">
-            <a href="#" class="hover:text-button duration-300">За нас</a>
+          <a href="#" class="hover:text-button duration-300">За нас</a>
         </li>
         <li class="mx-4 my-6 md:my-0">
-            <a href="#" class="hover:text-button duration-300">Контакт</a>
+          <a href="#" class="hover:text-button duration-300">Контакт</a>
         </li>
         <li class="mx-4 my-6 md:my-0">
-            <div class="rounded-full pl-5 pr-3 py-2 border-2 bg-white">
-                <form action="/url" method="GET">
-                    <label for="search"></label>
-                    <input name="search" id="search" type="text" placeholder="icon"/>
-                    <button type="submit" class="rounded-full bg-purple">
-                        Submit
-                    </button>
-                </form>
-            </div>
+          <div class="rounded-full pl-5 pr-3 py-2 border-2 bg-white">
+            <form action="/url" method="GET">
+              <label for="search"></label>
+              <input name="search" id="search" type="text" placeholder="icon" />
+              <button type="submit" class="rounded-full bg-purple">
+                Submit
+              </button>
+            </form>
+          </div>
         </li>
         <li class="hover:text-gray-200"><a href="#">MK</a></li>
-    </ul>
-</nav>
-<div class="relative">
-    <div class="bg-gradient-to-t w-full h-48 from-white to-transparent absolute top-0"></div>
-    <img class="w-full h-48 object-cover" src="./Sliki/21.jpg" alt="hero image">
-</div>
-</body>
+      </ul>
+    </nav>
+    <div class="relative">
+      <div
+        class="bg-gradient-to-t w-full h-48 from-white to-transparent absolute"
+      >
+        <p class="py-36 text-center text-secondary text-6xl">
+          Вашето здравје е наша должност
+        </p>
+      </div>
+      <img
+        class="w-full h-48 object-cover"
+        src="./Sliki/21.jpg"
+        alt="hero image"
+      />
+    </div>
+  </body>
 </html>
